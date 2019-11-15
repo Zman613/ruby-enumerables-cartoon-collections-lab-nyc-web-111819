@@ -1,6 +1,9 @@
 def roll_call_dwarves(dwarves)
   # Your code here
   dwarves.each_with_index do |dwarf, i|
+    if i == 0
+      i += 1
+    end
     puts "#{i}. #{dwarf}"
   end
 end
