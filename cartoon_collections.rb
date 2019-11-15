@@ -22,9 +22,8 @@ def find_the_cheese(strings)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.map do |cheese|
     if strings.include?(cheese)
-      cheese
-    else
-      nil
+      return cheese
     end
   end
+  return nil
 end
